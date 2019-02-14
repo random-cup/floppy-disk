@@ -1,0 +1,79 @@
+<html style = "background-color: #7ba2e0">
+
+<title>How many floppies?</title>
+<link rel="shortcut icon" href="./assets/favicon.ico"/>
+<body>
+
+
+<style>
+
+.box-content{
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 800px;
+    height: 100px;
+}
+
+</style>
+
+</body>
+
+  <br />
+  <h1 style = "text-align: center">How many floppy disks?</h1>
+<hr />
+<div class = "box-content" style = "text-align: center">
+
+<input type="number" id="fromValue" style='font-size: 26px;'>
+
+<select id = "from" class = "selectpicker show-menu-arrow" data-width="auto" data-style="btn-primary">
+  <option value="mb">MB</option>
+  <option value="gb">GB</option>
+  <option value="book">Books on Tape (240mb)</option>
+  <option value="movie">Movies (4gb)</option>
+  <option value="song">Songs (3.5mb)</option>
+  <option value="game">Games (30gb)</option>
+
+</select>
+
+<br /><br />
+
+<h4>IS: </h4><br />
+
+<h2 id = "toValue">0</h2>
+<select id = "to" class = "selectpicker show-menu-arrow" data-width="auto" data-style="btn-primary">
+  <option value="smlflop">3.5 inch (1.44mb)</option>
+  <option value="midflop">5.25 inch (720kb)</option>
+  <option value="bigflop">8 inch (500kb)</option>
+</select>
+
+<h4>floppies </h4>
+
+
+<br /><br /><br /><br /><br />
+<h5>Made by prateek</h5>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+<script src = "./units.js"></script>
+
+
+</html>
