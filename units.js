@@ -4,9 +4,9 @@ $( document ).ready(function() {
     convert();
   });
 
-  $('#from_src, #dest_picker').on('hidden.bs.select', function () {
+  $('#from_src, #to_dst').change(function () {
     convert();
-});
+  });
 
 function numberWithCommas(x) {
     return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -20,7 +20,7 @@ function numberWithCommas(x) {
  
     var fromInMb;
     var result;
-    console.log($('#faker').val())
+
     console.log(from)
     console.log(to)
 
