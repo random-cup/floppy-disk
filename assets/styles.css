@@ -28,8 +28,8 @@
   text-align: center;
 }
 
-.big-box {
-    outline: 2px dashed #3F51B5;
+.big-boxs {
+    outline: 2px solid #3F51B5;
 }
 
 .floppy-main {
