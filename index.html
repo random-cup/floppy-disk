@@ -1,10 +1,25 @@
+<!DOCTYPE html>
 <html style = "background-color: #7ba2e0">
+<head>
+  <title>How many floppies?</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico"/>
+</head>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div class="mdl-layout-spacer"></div>
+      <span class="mdl-layout-title">How many floppy disks?</span>
+      <div class="mdl-layout-spacer"></div>
 
-<title>How many floppies?</title>
-<link rel="shortcut icon" href="./assets/favicon.ico"/>
-<body>
+      <!-- Add spacer, to align navigation to the right -->
+      <!-- Navigation. We hide it in small screens. -->
+      
+    </div>
+  </header>
 
-
+<!--
 <style>
 
 .box-content{
@@ -19,26 +34,32 @@
 }
 
 </style>
+-->
+<!-- <div class = "box-content" style = "text-align: center"> -->
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
 
-</body>
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="fromValue">
+    <label class="mdl-textfield__label" for="sample2">Enter amount</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
 
-  <br />
-  <h1 style = "text-align: center">How many floppy disks?</h1>
-<hr />
-<div class = "box-content" style = "text-align: center">
+<!-- <input type="number" id="fromValue" style='font-size: 26px;'> -->
 
-<input type="number" id="fromValue" style='font-size: 26px;'>
-
-<select id = "from" class = "selectpicker show-menu-arrow" data-width="auto" data-style="btn-primary">
+<!--
+<select id = "fromfake" class = "selectpicker show-menu-arrow" data-width="auto" data-style="btn-primary">
+  <option value="song">Songs (3.5mb)</option>
+  <option value="movie">Movies (4gb)</option>
+  <option value="game">Games (30gb)</option>
+  <option value="book">Books on Tape (240mb)</option>
   <option value="mb">MB</option>
   <option value="gb">GB</option>
-  <option value="book">Books on Tape (240mb)</option>
-  <option value="movie">Movies (4gb)</option>
-  <option value="song">Songs (3.5mb)</option>
-  <option value="game">Games (30gb)</option>
 
 </select>
-
+-->
 <br /><br />
 
 <h4>IS: </h4><br />
@@ -53,17 +74,26 @@
 <h4>floppies </h4>
 
 
-<br /><br /><br /><br /><br />
-<h5>Made by prateek</h5>
+<!-- </div> -->
+  </main>
 
-</div>
+
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Made by prateek</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">sample_link</a></li>
+    </ul>
+  </div>
+</footer>
+
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified CSS -->
+ <!--Latest compiled and minified CSS 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -72,6 +102,11 @@ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7T
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
 <script src = "./units.js"></script>
 

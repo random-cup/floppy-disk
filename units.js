@@ -4,7 +4,7 @@ $( document ).ready(function() {
     convert();
   });
 
-  $('#from, #to').on('hidden.bs.select', function () {
+  $('#from_src, #dest_picker').on('hidden.bs.select', function () {
     convert();
 });
 
@@ -14,12 +14,15 @@ function numberWithCommas(x) {
 
   var convert = function(){
 
-    var from = $('#from').find(":selected").val();
-    var to = $('#to').find(":selected").val();
+    var from = $('#from').val();
+    var to = $('#to').val();
     var fromValue = $('#fromValue').val();
  
     var fromInMb;
     var result;
+    console.log($('#faker').val())
+    console.log(from)
+    console.log(to)
 
     switch(from){
       case 'mb': fromInMb = 1.0 * fromValue ; break;
