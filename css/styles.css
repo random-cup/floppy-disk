@@ -34,14 +34,19 @@ Colors:
 body {
 	display: flex;
 	flex-direction: column;
-  }
-  .header {
+}
+.header {
 	flex: 1 0 auto;
-  }
-  .footer {
+}
+.footer {
 	flex-shrink: 0;
-  }
-  
+}
+select {
+	width: 15rem;
+}
+.numeric {
+	width: 10rem;
+}
 /******************************/
 /*     01. General Styles     */
 /******************************/

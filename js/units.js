@@ -1,10 +1,3 @@
-$('form input').keydown(function (e) {
-  if (e.keyCode == 13) {
-      e.preventDefault();
-      return false;
-  }
-});
-
 function numberWithCommas(x) {
     return x.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -13,7 +6,7 @@ function updateOutput() {
   var inForm = document.getElementById("inCalc");
   var outForm = document.getElementById("outCalc");
 
-  var fromValue = parseInt(inForm.elements["fromValue"].value);
+  var fromValue = parseFloat(inForm.elements["fromValue"].value);
   var fromType = inForm.elements["fromType"];
   var toType = outForm.elements["toType"];
 

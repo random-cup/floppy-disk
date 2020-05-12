@@ -76,11 +76,11 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-5 text-center">
+          <div class="col-lg-5 text-center align-self-center">
             <form id="inCalc" oninput="updateOutput()" onsubmit="updateOutput()">
-              <input name="fromValue" type="number" value="0" />
+              <input name="fromValue" class="numeric text-center form-control-input" type="number" value="0" />
               <input name="junk" style="display: none;" />
-              <select name="fromType" onchange="updateOutput()">
+              <select name="fromType" class="form-control-select" onchange="updateOutput()">
                 <option value="song">Songs (3.5 mb)</option>
                 <option value="movie">Movies (4 gb)</option>
                 <option value="game">Games (30 gb)</option>
@@ -90,13 +90,13 @@
               </select>
             </form>
           </div>
-          <div class="col-lg-2 text-center">
+          <div class="col-lg-2 text-center align-self-center">
             <h2>~</h2>
           </div>
-          <div class="col-lg-5 text-center">
+          <div class="col-lg-5 text-center align-self-center">
             <form id="outCalc" oninput="updateOutput()">
-              <output name="result" for="fromValue fromType toType">0</output>
-              <select name="toType" onchange="updateOutput()">
+              <output name="result" class="numeric form-control-input" for="fromValue fromType toType">0</output>
+              <select name="toType" class="form-control-select" onchange="updateOutput()">
                 <option value="smFloppy">3.5 inch floppies (1.44 mb)</option>
                 <option value="mdFloppy">5.25 inch floppies (720 kb)</option>
                 <option value="lgFloppy">8 inch floppies (500 kb)</option>
